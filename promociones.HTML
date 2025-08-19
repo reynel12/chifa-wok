@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="promociones.css">
+  <title>Chifa Wok</title>
+</head>
+<body>
+  <header>
+    <!-- Logo -->
+    <div class="logo">
+      <img src="logo.png" alt="Logo Chifa Wok">
+    </div>
+
+    <!-- Toggle (checkbox oculto) -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir menú">
+    <label for="nav-toggle" class="hamburger" aria-hidden="true">
+      <span></span>
+    </label>
+
+    <!-- Navegación -->
+    <nav class="icons" role="navigation">
+      <a href="index.html">INICIO</a>
+      <a  class="active1" href="promociones.html">PROMOCIONES</a>
+      <a href="nosotros.html">NOSOTROS</a>
+    </nav>
+  </header>
+
+  <!-- TÍTULO -->
+  <h2 class="section-title">PROMOCIONES Y OFERTAS</h2>
+  
+  <!-- BOTONES TABS -->
+  <div class="tab-container">
+    <button class="tab-button active" onclick="openTab('promos', event)">Promociones</button>
+    <button class="tab-button" onclick="openTab('ofertas', event)">Ofertas</button>
+  </div>
+
+  <!-- SECCIÓN PROMOCIONES -->
+  <section id="promos" class="tab-content active">
+    <div class="card">
+      <span class="discount">-20%</span>
+      <img src="https://i.pinimg.com/736x/bc/c9/5d/bcc95dcc303c220fa7661d0b44c0372e.jpg" alt="Combo Pollo Chifa">
+      <div class="card-body">
+        <div class="title">Combo Pollo Chifa</div>
+        <div class="price"><del>S/ 30.00</del> <strong>S/ 24.00</strong></div>
+        <div class="btn-container">
+          <button class="btn">Agregar 🛒</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="discount">-15%</span>
+      <img src="https://i.pinimg.com/1200x/10/f4/87/10f487e5cf4c1a159de9e75265188eed.jpg" alt="Chaufa Clásico">
+      <div class="card-body">
+        <div class="title">Chaufa Clásico</div>
+        <div class="price"><del>S/ 20.00</del> <strong>S/ 17.00</strong></div>
+        <div class="btn-container">
+          <button class="btn">Agregar 🛒</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="discount">-10%</span>
+      <img src="https://i.pinimg.com/1200x/59/d0/cb/59d0cbee05ae4c0b736abd942ffd1148.jpg" alt="Tallarín Saltado">
+      <div class="card-body">
+        <div class="title">Tallarín Saltado</div>
+        <div class="price"><del>S/ 22.00</del> <strong>S/ 19.80</strong></div>
+        <div class="btn-container">
+          <button class="btn">Agregar 🛒</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="discount">-25%</span>
+      <img src="https://i.pinimg.com/736x/06/da/ac/06daacf46642532ba262aec07ac2ca86.jpg" alt="Arroz Chaufa Especial">
+      <div class="card-body">
+        <div class="title">Arroz Chaufa Especial</div>
+        <div class="price"><del>S/ 35.00</del> <strong>S/ 26.25</strong></div>
+        <div class="btn-container">
+          <button class="btn">Agregar 🛒</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="discount">-30%</span>
+      <img src="https://i.pinimg.com/736x/c1/bc/3a/c1bc3a3f0b29047e5285e71fd861815f.jpg" alt="Combo Familiar Wok">
+      <div class="card-body">
+        <div class="title">Combo Familiar Wok</div>
+        <div class="price"><del>S/ 50.00</del> <strong>S/ 35.00</strong></div>
+        <div class="btn-container">
+          <button class="btn">Agregar 🛒</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN OFERTAS -->
+  <section id="ofertas" class="tab-content">
+    <div class="card">
+      <span class="offer-tag">OFERTA</span>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4ZxDZ2c6cW5Tdu69yzHvy-hDawp-Lge-yHg&s" alt="Lomo Saltado Especial">
+      <div class="card-body">
+        <div class="title">Lomo Saltado Especial</div>
+        <div class="price"><del>S/ 28.00</del> <strong>S/ 22.40</strong></div>
+        <p class="description">¡Solo por hoy! Lomo saltado con porción extra de carne</p>
+        <div class="btn-container">
+          <button class="btn">Agregar 🛒</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="offer-tag">OFERTA</span>
+      <img src="https://i.pinimg.com/1200x/37/92/e5/3792e5d17cc797a128f1391396a64f1c.jpg" alt="Combo Mixto">
+      <div class="card-body">
+        <div class="title">Combo Mixto</div>
+        <div class="price"><del>S/ 40.00</del> <strong>S/ 32.00</strong></div>
+        <p class="description">2 entradas + 2 platos principales + 2 bebidas</p>
+        <div class="btn-container">
+          <button class="btn">Agregar 🛒</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="offer-tag">OFERTA</span>
+      <img src="https://i.pinimg.com/736x/5d/3f/4e/5d3f4e13955b0acf883062d93a9f31cb.jpg" alt="Wok Vegetariano">
+      <div class="card-body">
+        <div class="title">Wok Vegetariano</div>
+        <div class="price"><del>S/ 25.00</del> <strong>S/ 18.75</strong></div>
+        <p class="description">Deliciosa opción vegetariana con ingredientes frescos</p>
+        <div class="btn-container">
+          <button class="btn">Agregar 🛒</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="offer-tag">OFERTA</span>
+      <img src="https://i.pinimg.com/1200x/47/3f/9d/473f9d552c717e0b743b6f39a5f817ee.jpg" alt="Sopa Wantán">
+      <div class="card-body">
+        <div class="title">Sopa Wantán + Chaufa</div>
+        <div class="price"><del>S/ 18.00</del> <strong>S/ 14.40</strong></div>
+        <p class="description">Combo perfecto para días fríos</p>
+        <div class="btn-container">
+          <button class="btn">Agregar 🛒</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="offer-tag">OFERTA</span>
+      <img src="https://i.pinimg.com/736x/fa/c5/59/fac559f2ac6bc0a75e686023252f1485.jpg" alt="Pollo Tipakay">
+      <div class="card-body">
+        <div class="title">Pollo Tipakay</div>
+        <div class="price"><del>S/ 26.00</del> <strong>S/ 20.80</strong></div>
+        <p class="description">Nuestro famoso pollo tipakay con salsa especial</p>
+        <div class="btn-container">
+          <button class="btn">Agregar 🛒</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="logo.png" alt="Logo Chifa Wok">
+        <p>Fusionando lo mejor de la cocina oriental con el corazón peruano.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Términos y Condiciones</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Chifa Wok — Todos los derechos reservados
+    </div>
+  </footer>
+
+  <!-- BOTÓN WHATSAPP -->
+  <a href="https://wa.me/51933428149" target="_blank" class="whatsapp-float" aria-label="Consultar por WhatsApp">
+    <img src="ocial.png" alt="WhatsApp">
+  </a>
+   <script src="promociones.js"></script>
+</body>
+</html>
+

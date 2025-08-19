@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosotros - Chifa Wok</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="nosotros.css">
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo Chifa Wok">
+    </div>
+
+    <!-- Toggle -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir menú">
+    <label for="nav-toggle" class="hamburger" aria-hidden="true">
+      <span></span>
+    </label>
+
+    <!-- Navegación -->
+    <nav class="icons" role="navigation">
+      <a href="index.html">INICIO</a>
+      <a href="promociones.html">PROMOCIONES</a>
+      <a class="active1" href="nosotros.html">NOSOTROS</a>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="about-section">
+    <h1 class="section-title">NUESTRA HISTORIA Y PASIÓN</h1>
+    
+    <div class="about-content">
+      <!-- IZQUIERDA -->
+      <div class="about-left">
+        <div class="history-card">
+          <center><h3 class="titulo-historia">NUESTRA HISTORIA</h3></center>
+          </br>
+          <p>Chifa Wok nació como un pequeño local en Lima con el sueño de compartir la auténtica cocina fusión chino-peruana. Hoy somos un referente en la ciudad gracias a nuestra pasión por la gastronomía.</p>
+        </div>
+      </br>
+        <div class="mission-vision">
+          <div class="mission-card">
+            <center><h3 class="titulo-historia">MISIÓN</h3></center>
+            </br>
+            <p>Brindar experiencias culinarias únicas con auténticos sabores chifa, usando ingredientes frescos y técnicas tradicionales.</p>
+          </div>
+          </br>
+          <div class="vision-card">
+            <center><h3 class="titulo-historia">VISIÓN</h3></center>
+            </br>
+            <p>Ser reconocidos como el principal referente de la cocina chifa en Perú, innovando sin perder nuestras raíces.</p>
+          </div>
+        </div>
+
+        <!-- INFO DE CONTACTO -->
+        <div class="contact-info">
+          <div class="info-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Correo</h3>
+
+          </div>
+          <div class="info-card">
+            <i class="fas fa-phone-alt"></i>
+            <h3>Teléfonos</h3>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Ubícanos</h3>
+
+          </div>
+        </div>
+      </div>
+      
+      <!-- DERECHA (Formulario) -->
+      <div class="contact-form">
+        <h3>CONTÁCTANOS</h3>
+        <form>
+          <div class="form-group">
+            <label for="nombres">Nombres Completos</label>
+            <input type="text" id="nombres" placeholder="Ingresa tu nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" placeholder="tucorreo@ejemplo.com" required>
+          </div>
+          <div class="form-group">
+            <label for="sugerencia">Mensaje</label>
+            <textarea id="sugerencia" placeholder="Escribe aquí tu mensaje..." required></textarea>
+          </div>
+          <button type="submit" class="btn">ENVIAR</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="logo.png" alt="Logo Chifa Wok">
+        <p>Fusionando lo mejor de la cocina oriental con el corazón peruano.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Términos y Condiciones</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 Chifa Wok — Todos los derechos reservados</div>
+  </footer>
+
+  <!-- BOTÓN WHATSAPP -->
+  <a href="https://wa.me/51933428149" target="_blank" class="whatsapp-float" aria-label="Consultar por WhatsApp">
+    <img src="social.png" alt="WhatsApp">
+  </a>
+</body>
+</html>

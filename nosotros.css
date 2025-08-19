@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+}
+
+/* ---- SECCIÓN NOSOTROS ---- */
+.about-section {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  margin: 2rem 0 3rem;
+  font-size: 2.5rem;
+  color: #b03a2e;
+  position: relative;
+}
+.section-title:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #b03a2e, #e67e22);
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+@media (min-width: 992px) {
+  .about-content {
+    grid-template-columns: 1.2fr 1.8fr; /* formulario más ancho */
+    align-items: start;
+  }
+}
+
+/* ---- TARJETAS ---- */
+.history-card, .mission-card, .vision-card, .info-card, .contact-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.history-card:hover, .mission-card:hover, .vision-card:hover, .info-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ---- FORMULARIO ---- */
+.contact-form h3 { text-align: center; margin-bottom: 1.5rem; color: #b03a2e; }
+.form-group { margin-bottom: 1.5rem; }
+.form-group label { font-weight: 600; color: #555; display:block; margin-bottom:0.5rem; }
+.form-group input, .form-group textarea {
+  width: 100%; padding: 0.9rem; border: 1px solid #ddd; border-radius: 10px;
+}
+.form-group textarea { height: 140px; resize: vertical; }
+.btn {
+  display: block; width: 100%; padding: 0.9rem;
+  background: linear-gradient(135deg, #b03a2e, #e67e22);
+  border: none; border-radius: 10px; color: #fff; font-weight: 600; cursor: pointer;
+}
+
+/* ---- CONTACTO INFO ---- */
+.contact-info { display: grid; gap: 2rem; margin-top: 3rem; }
+@media (min-width:768px) {
+  .contact-info { grid-template-columns: repeat(3,1fr); }
+}
+.info-card { text-align: center; }
+.info-card i { font-size: 2rem; color: #b03a2e; margin-bottom: 1rem; }
+
+
+
+.titulo-historia {
+  color: #b03a2e;
+}
